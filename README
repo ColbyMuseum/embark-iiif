@@ -1,0 +1,3 @@
+*embark-iiif: IIIF templates for Embark*
+
+This repo contains a few templates for exporting object data from Embark as IIIF manifests. At the [Colby College Museum of Art](http://colby.edu/museum) we use these templates to power our deep-zoom multi-image viewer, alo 
