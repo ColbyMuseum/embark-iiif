@@ -9,7 +9,7 @@ This repo contains a few templates for exporting object data from Embark as [III
 Usage
 -----
 
-Drop the `.shtml` files in the `WebFolder` directory of your Embark WebKiosk instance. From there, use Embark's data templates. From there, use the standard XML Data Sharing template query URLs:
+Drop the `.shtml` files in the `WebFolder` directory of your Embark WebKiosk instance. From there, use Embark's data template query URLs:
 - For objects: `http://foo.bar/results.html?layout=iiif_imgs&recordType=objects_1&query=_ID=4`
 - For portfolios: `http://foo.bar/results.html?layout=iiif_portfolio&recordType=objects_1&maximumRecords=9999&query=[portfolios]_ID=103`
 - For an IIIF collection of all objects: `http://foo.bar/results.html?layout=iiif_collection&recordType=objects_1&maximumRecords=9999&query=_ID>1`
