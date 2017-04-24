@@ -1,0 +1,22 @@
+{ 
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "https://iiif.museum.colby.edu/presentation/collection/top.json",
+  "@type": "sc:Collection",
+  "label": "<!--4DVAR [Portfolios]Port_Name-->",
+  "viewingHint": "top",
+  "description": "Portfolio of objects in the collection of the Colby College Museum of Art",
+  "logo": {
+      "@id": "https://iiif.museum.colby.edu/image/logo/full/50,/0/default.jpg"
+  },
+  "manifests": [
+  <!--4DLOOP [Objects_1]-->
+  {
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://iiif.museum.colby.edu/presentation/object/<!--4DVAR [Objects_1]_Objects_1_ID-->.json",
+    "@type": "sc:Manifest",
+    "label": "<!--4DTEXT [Objects_1]Disp_Title -->"
+  },
+  <!--4DENDLOOP-->
+  { }
+  ]
+}

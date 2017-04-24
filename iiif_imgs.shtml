@@ -1,0 +1,128 @@
+<!--4DSCRIPT/LoadRelatedRecords/Objects_1{0}-->
+  {
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://iiif.museum.colby.edu/presentation/object/<!--4DVAR [Objects_1]_Objects_1_ID-->.json",
+    "@type": "sc:Manifest",
+    <!--4DIF ([Objects_1]Disp_Title#"")-->
+    "label": "<!--4DTEXT [Objects_1]Disp_Title -->",
+    <!--4DENDIF-->
+    "logo": {
+      "@id": "https://iiif.museum.colby.edu/image/logo/full/50,/0/default.jpg"
+    },
+    "attribution" : "Data courtesy of the Colby College Museum of Art. <!--4DVAR [Objects_1]Copyright_text-->",
+    "metadata": [
+      {
+        "label": "Accession Number",
+        "value": "<!--#4DSCRIPT/SQL_Encode/[Objects_1]Disp_Access_No-->"
+      },
+      <!--4DIF ([Objects_1]Disp_Title # "")-->
+      {
+        "label": "Title",
+        "value": "<!--4DTEXT [Objects_1]Disp_Title-->"
+      },
+      <!--4DENDIF-->
+      <!--4DIF ([Objects_1]Disp_Maker_1#"")-->
+      {
+        "label": "Creator",
+        "value": "<!--4DTEXT [Objects_1]Disp_Maker_1-->"
+      },
+      <!--4DENDIF-->
+      <!--4DIF ([Objects_1]Disp_Create_DT#"")-->
+      {
+        "label": "Created Date",
+        "value": "<!--4DTEXT [Objects_1]Disp_Create_DT-->"
+      },
+      <!--4DENDIF-->
+      <!--4DIF ([Objects_1]Disp_Medium#"")-->
+      {
+        "label": "Medium and Support",
+        "value": "<!--4DTEXT [Objects_1]Disp_Medium-->" 
+      },
+      <!--4DENDIF-->
+      <!--#4DSCRIPT/LoadObjectNotes/Didactic--><!--4DIF ([Object_Notes]Text#"")-->      
+      {
+        "label": "Description",
+        "value": "<!--#4DSCRIPT/SQL_Encode/[Object_Notes]Text-->" 
+      },
+      <!--4DENDIF-->
+      <!--4DIF ([Objects_1]Dedication#"") -->
+      {
+        "label" : "Credit",
+        "value" : "<!--4DTEXT [Objects_1]Dedication-->"
+      }
+      <!--4DENDIF-->  
+    ],
+    <!--4DSCRIPT/LoadRelatedRecords/Objects_1:Surrogates-->
+    <!--4DLOOP [Surrogates]--><!--4DIF ( Lowercase([Surrogates]File_Name) % "@_cd.jpg" )--><!--4DIF [Surrogates]IsPrimary-->
+    "thumbnail": {
+      "@id": "https://iiif.museum.colby.edu/image/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->/full/150,/0/default.jpg",
+      "@type": "dctypes:Image",
+      "service": {
+        "@id": "https://iiif.museum.colby.edu/image/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->",
+        "@context": "http://iiif.io/api/image/2/context.json",
+        "profile": "http://iiif.io/api/image/2/level2.json"
+      }
+    },<!--4DENDIF--><!--4DENDIF--><!--4DENDLOOP-->
+    "sequences": [
+      {
+        "@id": "https://iiif.museum.colby.edu/presentation/object/<!--4DTEXT [Objects_1]_Objects_1_ID-->/sequence",
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@type": "sc:Sequence",
+        "viewingHint": "individuals",
+        "label": "All Images",
+        "canvases": [
+        <!--4DLOOP [Surrogates]--><!--4DIF ( Lowercase([Surrogates]File_Name) % "@_cd.jpg" )--><!--4DIF [Surrogates]IsPrimary-->
+          {
+            "@id": "https://iiif.museum.colby.edu/presentation/canvas/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->",
+            "@type": "sc:Canvas",
+            "width": 999,
+            "height": 999,
+            "label": "<!--4DTEXT [Surrogates]View_1-->",
+            "images": [
+              {
+                "@id": "https://iiif.museum.colby.edu/presentation/canvas/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->/image",
+                "@type": "oa:Annotation",
+                "on": "https://iiif.museum.colby.edu/presentation/canvas/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->",
+                "motivation": "sc:painting",
+                "resource": {
+                  "@id": "https://iiif.museum.colby.edu/image/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->/full/full/0/default.jpg",
+                  "@type": "dctypes:Image",
+                  "service": {
+                    "@id": "https://iiif.museum.colby.edu/image/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->",
+                    "@context": "http://iiif.io/api/image/2/context.json",
+                    "profile": "http://iiif.io/api/image/2/level2.json"
+                  }
+                }
+              }
+            ]
+          }<!--4DENDIF--><!--4DENDIF--><!--4DENDLOOP-->
+        <!--4DLOOP [Surrogates]--><!--4DIF ( Lowercase([Surrogates]File_Name) % "@_cd.jpg" )--><!--4DIF [Surrogates]IsPrimary = False -->
+         ,{
+            "@id": "https://iiif.museum.colby.edu/presentation/canvas/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->",
+            "@type": "sc:Canvas",
+            "width": 999,
+            "height": 999,
+            "label": "<!--4DTEXT [Surrogates]View_1-->",
+            "images": [
+              {
+                "@id": "https://iiif.museum.colby.edu/presentation/canvas/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->/image",
+                "@type": "oa:Annotation",
+                "on": "https://iiif.museum.colby.edu/presentation/canvas/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->",
+                "motivation": "sc:painting",
+                "resource": {
+                  "@id": "https://iiif.museum.colby.edu/image/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->/full/full/0/default.jpg",
+                  "@type": "dctypes:Image",
+                  "service": {
+                    "@id": "https://iiif.museum.colby.edu/image/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->",
+                    "@context": "http://iiif.io/api/image/2/context.json",
+                    "profile": "http://iiif.io/api/image/2/level2.json"
+                  }
+                }
+              }
+            ]
+          }
+        <!--4DENDIF--><!--4DENDIF--><!--4DENDLOOP-->
+        ]
+      }
+    ]
+  }
