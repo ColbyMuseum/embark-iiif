@@ -9,7 +9,7 @@
     "logo": {
       "@id": "https://iiif.museum.colby.edu/image/logo/full/50,/0/default.jpg"
     },
-    "attribution" : "Data courtesy of the Colby College Museum of Art. <!--4DVAR [Objects_1]Copyright_text-->",
+    "attribution" : "<!--4DTEXT [Objects_1]Dedication--> Colby College Museum of Art.<!--4DIF [Objects_1]Copyright_text#""--> <!--4DVAR [Objects_1]Copyright_text--><!--4DENDIF-->",
     "metadata": [
       {
         "label": "Accession Number",
@@ -53,12 +53,12 @@
       <!--4DENDIF-->  
     ],
     <!--4DSCRIPT/LoadRelatedRecords/Objects_1:Surrogates-->
-    <!--4DLOOP [Surrogates]--><!--4DIF ( Lowercase([Surrogates]File_Name) % "@_cd.jpg" )--><!--4DIF [Surrogates]IsPrimary-->
+    <!--4DLOOP [Surrogates]--><!--4DIF ( Lowercase(Filename("[Surrogates]")) % "@_cd.jpg" )--><!--4DIF [Surrogates]IsPrimary-->
     "thumbnail": {
-      "@id": "https://iiif.museum.colby.edu/image/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->/full/150,/0/default.jpg",
+      "@id": "https://iiif.museum.colby.edu/image/<!--4DTEXT Replace string(Filename("[Surrogates]");"_cd.jpg";"")-->/full/150,/0/default.jpg",
       "@type": "dctypes:Image",
       "service": {
-        "@id": "https://iiif.museum.colby.edu/image/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->",
+        "@id": "https://iiif.museum.colby.edu/image/<!--4DTEXT Replace string(Filename("[Surrogates]");"_cd.jpg";"")-->",
         "@context": "http://iiif.io/api/image/2/context.json",
         "profile": "http://iiif.io/api/image/2/level2.json"
       }
@@ -71,24 +71,24 @@
         "viewingHint": "individuals",
         "label": "All Images",
         "canvases": [
-        <!--4DLOOP [Surrogates]--><!--4DIF ( Lowercase([Surrogates]File_Name) % "@_cd.jpg" )--><!--4DIF [Surrogates]IsPrimary-->
+        <!--4DLOOP [Surrogates]--><!--4DIF ( Lowercase(Filename("[Surrogates]")) % "@_cd.jpg" )--><!--4DIF [Surrogates]IsPrimary-->
           {
-            "@id": "https://iiif.museum.colby.edu/presentation/canvas/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->",
+            "@id": "https://iiif.museum.colby.edu/presentation/canvas/<!--4DTEXT Replace string(Filename("[Surrogates]");"_cd.jpg";"")-->",
             "@type": "sc:Canvas",
             "width": 999,
             "height": 999,
             "label": "<!--4DTEXT [Surrogates]View_1-->",
             "images": [
               {
-                "@id": "https://iiif.museum.colby.edu/presentation/canvas/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->/image",
+                "@id": "https://iiif.museum.colby.edu/presentation/canvas/<!--4DTEXT Replace string(Filename("[Surrogates]");"_cd.jpg";"")-->/image",
                 "@type": "oa:Annotation",
-                "on": "https://iiif.museum.colby.edu/presentation/canvas/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->",
+                "on": "https://iiif.museum.colby.edu/presentation/canvas/<!--4DTEXT Replace string(Filename("[Surrogates]");"_cd.jpg";"")-->",
                 "motivation": "sc:painting",
                 "resource": {
-                  "@id": "https://iiif.museum.colby.edu/image/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->/full/full/0/default.jpg",
+                  "@id": "https://iiif.museum.colby.edu/image/<!--4DTEXT Replace string(Filename("[Surrogates]");"_cd.jpg";"")-->/full/full/0/default.jpg",
                   "@type": "dctypes:Image",
                   "service": {
-                    "@id": "https://iiif.museum.colby.edu/image/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->",
+                    "@id": "https://iiif.museum.colby.edu/image/<!--4DTEXT Replace string(Filename("[Surrogates]");"_cd.jpg";"")-->",
                     "@context": "http://iiif.io/api/image/2/context.json",
                     "profile": "http://iiif.io/api/image/2/level2.json"
                   }
@@ -96,24 +96,24 @@
               }
             ]
           }<!--4DENDIF--><!--4DENDIF--><!--4DENDLOOP-->
-        <!--4DLOOP [Surrogates]--><!--4DIF ( Lowercase([Surrogates]File_Name) % "@_cd.jpg" )--><!--4DIF [Surrogates]IsPrimary = False -->
+        <!--4DLOOP [Surrogates]--><!--4DIF ( Lowercase(Filename("[Surrogates]")) % "@_cd.jpg" )--><!--4DIF [Surrogates]IsPrimary = False -->
          ,{
-            "@id": "https://iiif.museum.colby.edu/presentation/canvas/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->",
+            "@id": "https://iiif.museum.colby.edu/presentation/canvas/<!--4DTEXT Replace string(Filename("[Surrogates]");"_cd.jpg";"")-->",
             "@type": "sc:Canvas",
             "width": 999,
             "height": 999,
             "label": "<!--4DTEXT [Surrogates]View_1-->",
             "images": [
               {
-                "@id": "https://iiif.museum.colby.edu/presentation/canvas/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->/image",
+                "@id": "https://iiif.museum.colby.edu/presentation/canvas/<!--4DTEXT Replace string(Filename("[Surrogates]");"_cd.jpg";"")-->/image",
                 "@type": "oa:Annotation",
-                "on": "https://iiif.museum.colby.edu/presentation/canvas/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->",
+                "on": "https://iiif.museum.colby.edu/presentation/canvas/<!--4DTEXT Replace string(Filename("[Surrogates]");"_cd.jpg";"")-->",
                 "motivation": "sc:painting",
                 "resource": {
-                  "@id": "https://iiif.museum.colby.edu/image/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->/full/full/0/default.jpg",
+                  "@id": "https://iiif.museum.colby.edu/image/<!--4DTEXT Replace string(Filename("[Surrogates]");"_cd.jpg";"")-->/full/full/0/default.jpg",
                   "@type": "dctypes:Image",
                   "service": {
-                    "@id": "https://iiif.museum.colby.edu/image/<!--4DTEXT Replace string([Surrogates]File_Name;"_cd.jpg";"")-->",
+                    "@id": "https://iiif.museum.colby.edu/image/<!--4DTEXT Replace string(Filename("[Surrogates]");"_cd.jpg";"")-->",
                     "@context": "http://iiif.io/api/image/2/context.json",
                     "profile": "http://iiif.io/api/image/2/level2.json"
                   }
