@@ -14,7 +14,7 @@
     "@context": "http://iiif.io/api/presentation/2/context.json",
     "@id": "https://iiif.museum.colby.edu/presentation/object/<!--4DVAR [Objects_1]_Objects_1_ID-->.json",
     "@type": "sc:Manifest",
-    "label": "<!--4DTEXT [Objects_1]Disp_Title -->"
+    "label": "<!--4DIF  ([Objects_1]Sort_Artist #"")--><!--4DTEXT [Objects_1]Sort_Artist-->. <!--4DENDIF--><!--4DTEXT [Objects_1]Disp_Title --><!--4DIF ([Objects_1]Disp_Create_DT #"") --> (<!--4DTEXT [Objects_1]Disp_Create_DT-->)<!--4DENDIF-->"
   },
   <!--4DENDIF--><!--4DENDIF--><!--4DENDLOOP--><!--4DENDLOOP-->
   { }
